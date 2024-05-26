@@ -33,6 +33,7 @@ namespace DesignPattern.ChainOfResponsibility.ChainOfResponsibility
                     "The Transaction Was Forwarded To The Assistant Manager.";
                 context.CustomerProcesses.Add(customerProcess);
                 context.SaveChanges();
+                
                 NextApprover.ProcessRequest(request);
             }
         }

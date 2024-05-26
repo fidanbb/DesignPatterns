@@ -5,7 +5,7 @@ namespace DesignPattern.ChainOfResponsibility.ChainOfResponsibility
     public abstract class Employee
     {
         protected Employee NextApprover;
-
+  
         public void SetNextApprover(Employee superVisor)
         {
             this.NextApprover = superVisor;
