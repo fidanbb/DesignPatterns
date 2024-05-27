@@ -1,0 +1,28 @@
+﻿@model DesignPattern.TemplateMethod.TemplatePattern.NetflixPlans
+@{
+    Layout = null;
+}
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<div class="container">
+    <br />
+
+    @* <h3>PlanType - @ViewBag.planType</h3>
+    <h3>Number of Person - @ViewBag.countPerson</h3>
+    <h3>Price - @ViewBag.price</h3>
+    <h3>Resolution - @ViewBag.resolution</h3>
+    <h3>Content - @ViewBag.content</h3>
+    *@
+
+    <h1>Ultra Plan Details</h1>
+    <p>Plan Type - @Model.PlanType("Ultra")</p>
+    <p>Number of Person - @Model.CountPerson(5)</p>
+    <p>Price - @Model.Price(150.99)</p>
+    <p>Content - @Model.Content("Film - Series-Animation-Documentary")</p>
+    <p>Resolution - @Model.Resoltion("1080px")</p>
+    <a href="/Default/BasicPlanIndex/" class="btn btn-warning">Basic Plan</a>
+    <a href="/Default/StandartPlanIndex/" class="btn btn-success">Standart Plan</a>
+</div>
