@@ -1,0 +1,22 @@
+﻿@model DesignPattern.Decorator.DAL.Message
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post">
+    <label>Sender</label>
+    <input type="text" class="form-control" asp-for="MessageSender" />
+    <br />
+    <label>Receiver</label>
+    <input type="text" class="form-control" asp-for="MessageReceiver" />
+    <br />
+    <label>Subject</label>
+    <input type="text" class="form-control" asp-for="MessageSubject" />
+    <br />
+    <label>Message Content</label>
+    <input type="text" class="form-control" asp-for="MessageContent" />
+    <br />
+    <button class="btn btn-primary">Send Message</button>
+</form>
